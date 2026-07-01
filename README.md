@@ -1,4 +1,4 @@
-# 🎨 Color Palette Generator
+# 🎨 SpectraDrop
 
 A beautiful, modern web application that extracts stunning color palettes from images using advanced pixel analysis.
 
