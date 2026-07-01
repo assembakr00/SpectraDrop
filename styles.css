@@ -1,0 +1,116 @@
+/* ============================================
+   Color Palette Generator - Styles
+   Author: Assem Bakr
+   ============================================ */
+
+/* Custom animations and transitions */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes toastSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slideUp {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.animate-fadeInScale {
+    animation: fadeInScale 0.5s ease-out forwards;
+}
+
+.animate-toastSlideIn {
+    animation: toastSlideIn 0.3s ease-out forwards;
+}
+
+/* Drag and drop zone styles */
+.dropzone {
+    transition: all 0.3s ease;
+}
+
+.dropzone.drag-over {
+    border-color: #3b82f6;
+    background-color: rgba(59, 130, 246, 0.05);
+    transform: scale(1.02);
+}
+
+/* Color card hover effect */
+.color-card {
+    transition: all 0.3s ease;
+}
+
+.color-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.color-swatch {
+    transition: box-shadow 0.3s ease;
+}
+
+.color-swatch:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Toast notification styles */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #10b981;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth grid layout */
+.palette-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* File input hidden but functional */
+#fileInput {
+    display: none;
+}
+
+/* Thumbnail preview */
+.thumbnail-preview {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-top: 12px;
+    animation: fadeInScale 0.4s ease-out;
+}
